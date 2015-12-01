@@ -1,0 +1,98 @@
+﻿<!-- BEGIN: FORM -->
+
+<div class="form-wrapper">
+
+    <h4>Contact form</h4>
+    <div class="form">
+        <form action="" enctype="multipart/form-data" method="post" novalidate="novalidate">
+            <table>
+                <tbody>
+
+                    <tr class="form-text-input-tr">
+                        <td class="label-td">
+                            <label class="label-required" for="form-field-name">Your name</label>
+                        </td>
+                        <td>
+                            <input type="text" name="name" id="form-field-name" value="" required="required" aria-required="true">
+                        </td>
+                        <td>
+                            <!-- THIS SECTION IS RESULT OF FORM VALIDATION: valid -->
+                            <span class="field-validation-valid"></span>
+                        </td>
+                    </tr>
+
+                    <tr class="form-email-input-tr">
+                        <td class="label-td">
+                            <label class="label-required" for="form-field-email">Email</label>
+                        </td>
+                        <td>
+                            <input type="email" name="email" id="form-field-email" value="" required="required" aria-required="true">
+                        </td>
+                        <td>
+                            <!-- THIS SECTION IS RESULT OF FORM VALIDATION: invalid -->
+                            <span class="field-validation-error"><span>This value is required.</span></span>
+                        </td>
+                    </tr>
+
+                    <tr class="form-text-input-tr">
+                        <td class="label-td">
+                            <label for="form-field-phone-number">Phone number</label>
+                        </td>
+                        <td>
+                            <input type="text" name="phone-number" id="form-field-phone-number" value="">
+                        </td>
+                        <td>
+                            <span class="field-validation-valid"></span>
+                        </td>
+                    </tr>
+
+                    <tr class="form-text-input-tr">
+                        <td class="label-td">
+                            <label for="form-field-company">Company</label>
+                        </td>
+                        <td>
+                            <input type="text" name="company" id="form-field-company" value="">
+                        </td>
+                        <td>
+                            <span class="field-validation-valid"></span>
+                        </td>
+                    </tr>
+
+                    <tr class="form-text-input-tr">
+                        <td class="label-td">
+                            <label for="form-field-web">Web</label>
+                        </td>
+                        <td>
+                            <input type="text" name="web" id="form-field-web" value="">
+                        </td>
+                        <td>
+                            <span class="field-validation-valid"></span>
+                        </td>
+                    </tr>
+
+                    <tr class="form-text-area-tr">
+                        <td class="label-td">
+                            <label for="form-field-note">Note</label>
+                        </td>
+                        <td>
+                            <textarea name="note" id="form-field-note"></textarea>
+                        </td>
+                        <td>
+                            <span class="field-validation-valid"></span>
+                        </td>
+                    </tr>
+
+                    <tr class="form-submit-tr">
+                        <td>&nbsp;</td>
+                        <td>
+                            <input class="form-submit" type="submit" value="Submit">
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </form>
+    </div>
+
+</div>
+
+<!-- END: FORM -->

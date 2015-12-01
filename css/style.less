@@ -1,0 +1,138 @@
+@import url(normalize.css);
+@import "variables";
+@import "grid";
+@import "menu";
+@import "content-slider";
+@import "form-controls";
+@import "article-list";
+@import "newsletter-module";
+@import "photo-gallery";
+@import "mixins";
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans',sans-serif;
+}
+
+.main {
+  margin: 0 auto;
+  border: 1px solid @color-light;
+
+  @media (max-width: @screen-phone) {
+    width: 100%;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+
+  @media (min-width: @screen-phone) and (max-width: @screen-tablet) {
+    width: 100%;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+
+  @media (min-width: @screen-tablet) and (max-width: @screen-desktop) {
+    width: @screen-tablet;
+  }
+
+  @media (min-width: @screen-desktop) and (max-width: @screen-lg-desktop) {
+    width: @screen-desktop;
+  }
+
+  @media (min-width: @screen-lg-desktop) {
+    width: @screen-lg-desktop;
+  }
+}
+
+header {
+  margin-bottom: 25px;
+}
+
+footer {
+  margin-top: 25px;
+  display: block;
+  align-content: center;
+  text-align: center;
+}
+
+// LANG
+#language-switch {
+  // TODO: finish styles for language select
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 10px;
+  color: @color-light;
+
+  .current {
+    color: @color-light;
+    cursor: not-allowed;
+  }
+}
+
+.lang-cs {
+
+}
+
+.current {
+
+}
+
+.lang-en {
+
+}
+
+.clearfix {
+  .clearfix();
+}
+
+.content-business  {
+  width: 100%; padding: 5px;
+
+  & > div {
+    width: 32%;
+    float: left;
+    margin: 5px;
+  }
+  
+  @media (max-width: @screen-desktop) {
+    & > div {
+      width: 100%;
+      float: none;
+    }
+  }
+}
+
+.button-sign-up {
+  border-radius: 5px;
+  padding: 15px 25px;
+  font-size: 22px;
+  text-decoration: none;
+  margin: 20px;
+  color: #fff;
+  position: relative;
+  display: inline-block;
+  background-color: #55acee;
+  box-shadow: 0px 5px 0px 0px #3C93D5;
+}
+
+.button-sign-up:active {
+  transform: translate(0px, 5px);
+  -webkit-transform: translate(0px, 5px);
+  box-shadow: 0px 1px 0px 0px;
+}
+
+.button-sign-up:hover {
+  background-color: #6FC6FF;
+}
+
+[class*='field-validation-error'] {
+  display: block;
+}
+
+[class*='field-validation-valid'] {
+  display: none;
+}

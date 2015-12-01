@@ -1,0 +1,39 @@
+@import "variables";
+@import "mixins";
+
+.article-list-item {
+  margin-bottom: 10px;
+  padding: 5px 5px 10px;
+  border-bottom: 1px solid @color-dark;
+
+  img {
+    float: left;
+    margin-right: 10px;
+
+    @media (max-width: @screen-desktop) {
+      float: none;
+      width: 100%;
+    }
+  }
+
+  .clearfix();
+
+  h2 {
+    margin: 5px;
+  }
+
+  .item-text {
+
+  }
+
+  .more {
+    display: block;
+  }
+
+  .time {
+    display: block;
+    font-size: 0.7em;
+    color: @color-dark;
+    float: right;
+  }
+}

@@ -1,0 +1,28 @@
+// ----------------------- SCREEN SIZES
+@screen-xs: 480px;
+@screen-sm: 768px;
+@screen-md: 992px;
+@screen-lg: 1200px;
+
+@screen-xs-min: @screen-xs;
+@screen-sm-min: @screen-sm;
+@screen-md-min: @screen-md;
+@screen-lg-min: @screen-lg;
+
+@screen-xs-max: (@screen-sm-min - 1);
+@screen-sm-max: (@screen-md-min - 1);
+@screen-md-max: (@screen-lg-min - 1);
+
+@screen-phone: @screen-xs-min;
+@screen-tablet: @screen-sm-min;
+@screen-desktop: @screen-md-min;
+@screen-lg-desktop: @screen-lg-min;
+
+// ----------------------- COLORS
+@color-dark: lighten(black, 25%);
+@color-light: darken(white, 5%);
+
+// ----------------------- MENU
+@main-menu-height: 43px;
+@menu-color-inactive: @color-dark;
+@menu-color-active: @color-light;

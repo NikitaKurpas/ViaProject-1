@@ -1,0 +1,29 @@
+.newsletter-module {
+  border-top: 1px solid #f2f2f2;
+  padding: 25px 0;
+  margin-top: 10px;
+  text-align: center;
+}
+.newsletter-module form input {
+  display: inline;
+  width: auto;
+  height: 30px;
+  margin: 0 15px;
+}
+.newsletter-module form label {
+  margin-right: 5px;
+  display: inline;
+}
+.newsletter-module .email-box {
+  vertical-align: middle;
+  display: inline;
+}
+.newsletter-module .submit {
+  border: 2px solid #f2f2f2;
+  transition: border 0.3s;
+  padding: 0 25px;
+}
+.newsletter-module .submit:hover {
+  box-shadow: none;
+  border: 2px solid #404040;
+}

@@ -1,0 +1,33 @@
+.photo-gallery {
+  float: right;
+}
+@media (max-width: 992px) {
+  .photo-gallery {
+    text-align: center;
+    float: none;
+  }
+}
+.photo-gallery figure {
+  border: 1px solid #f2f2f2;
+  padding: 5px;
+}
+@media (max-width: 768px) {
+  .photo-gallery figure {
+    width: 100%;
+    text-align: center;
+    display: inline-block;
+    margin-left: 10px;
+  }
+}
+.photo-gallery figure img {
+  width: 350px;
+  height: 150px;
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  .photo-gallery figure img {
+    width: 100%;
+  }
+}
+.photo-gallery h4 {
+  margin-left: 15px;
+}

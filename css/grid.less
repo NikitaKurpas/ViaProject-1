@@ -1,0 +1,37 @@
+@import "variables";
+
+.container-columns-container {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+[class*='container-column-'] {
+  float: left;
+}
+
+.container-column-width-100p {
+  width: 100%;
+}
+.container-column-width-50p {
+  width: 50%;
+}
+.container-column-width-33-3p {
+  width: 33.3%;
+}
+.container-column-width-33-4p {
+  width: 33.4%;
+}
+.container-column-width-25p {
+  width: 25%;
+}
+.container-column-content {
+  width: 98%;
+  margin: 10px;
+}
+
+@media (max-width: @screen-tablet) {
+  [class*='container-column-width'] {
+    width: 100%;
+  }
+}

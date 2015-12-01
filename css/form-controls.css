@@ -1,0 +1,71 @@
+input,
+textarea {
+  padding: 5px;
+  border: none;
+  border-bottom: solid 2px #b3b3b3;
+  transition: border 0.3s;
+  outline: none;
+}
+input:focus,
+textarea:focus,
+input:active,
+textarea:active,
+input:hover,
+textarea:hover {
+  border-bottom: solid 2px #404040;
+}
+input[type=submit],
+button {
+  border: solid 2px #b3b3b3;
+  background-color: #f2f2f2;
+  color: #404040;
+  transition: color 0.3s, border 0.3s;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+input[type=submit]:hover,
+button:hover {
+  border: solid 2px #404040;
+}
+input[type=submit]:focus,
+button:focus,
+input[type=submit]:active,
+button:active {
+  background-color: #404040;
+  color: #f2f2f2;
+}
+a {
+  color: #41b7d8;
+  text-decoration: underline;
+}
+.form-text-input-tr {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.form-wrapper {
+  margin: 25px;
+}
+.form-wrapper h4 {
+  border-bottom: 2px solid #404040;
+}
+.form-wrapper tr {
+  display: block;
+}
+.form-wrapper td {
+  display: inline-block;
+  margin-right: 10px;
+}
+.form-wrapper td.label-td {
+  width: 150px;
+}
+.form-wrapper tr.form-submit-tr {
+  margin-top: 15px;
+}
+.form-wrapper .field-validation-error {
+  font-size: 0.7em;
+  color: darkred;
+}
+.form-wrapper .field-validation-valid {
+  font-size: 0.7em;
+  color: #6ba75c;
+}

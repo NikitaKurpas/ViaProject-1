@@ -1,0 +1,121 @@
+.menu {
+  background: #404040;
+}
+.navigation {
+  display: block;
+  position: relative;
+  height: 43px;
+  margin: 0 auto;
+  border-bottom: 1px solid white;
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  .navigation {
+    width: 768px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1200px) {
+  .navigation {
+    width: 992px;
+  }
+}
+@media (min-width: 1200px) {
+  .navigation {
+    width: 1200px;
+  }
+}
+.navigation a {
+  color: #f2f2f2;
+  text-decoration: none;
+  display: block;
+  padding: 10px 25px;
+  background: #404040;
+  transition: color 0.3s, background-color 0.3s;
+}
+.navigation a:hover {
+  color: #404040;
+  background: #f2f2f2;
+}
+.navigation ul {
+  padding: 0;
+  margin: 0;
+}
+.navigation ul li {
+  float: left;
+  display: inline;
+  position: relative;
+  border-right: 1px solid #f2f2f2;
+}
+.navigation ul li ul {
+  left: 0;
+  top: 100%;
+}
+.navigation ul li ul li {
+  border-right: none;
+}
+.navigation ul li:last-child {
+  border-right: none;
+}
+.navigation ul ul {
+  display: none;
+}
+.navigation li:hover > ul {
+  display: block;
+  position: absolute;
+  z-index: 1000;
+  width: 150px;
+}
+.navigation li:hover > ul li {
+  width: 100%;
+}
+.navigation > input,
+.navigation > label {
+  display: none;
+}
+.navigation > label {
+  width: 100%;
+  float: left;
+  padding: 10px 0 10px 10px;
+  cursor: pointer;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  color: #f2f2f2;
+}
+@media (max-width: 768px) {
+  .navigation {
+    z-index: 1000;
+  }
+  .navigation > label,
+  .navigation ul li ul {
+    display: block;
+  }
+  .navigation > ul {
+    display: none;
+    clear: both;
+  }
+  .navigation > input:checked + ul {
+    display: block;
+  }
+  .navigation ul ul li a:before {
+    content: '> ';
+    display: inline;
+  }
+  .navigation ul ul li:hover > ul {
+    right: auto;
+    top: auto;
+    left: auto;
+  }
+  .navigation ul li {
+    float: none;
+    display: block;
+    border-right: none;
+    padding-left: 10px;
+  }
+  .navigation li:hover ul {
+    position: relative;
+    width: auto;
+  }
+}

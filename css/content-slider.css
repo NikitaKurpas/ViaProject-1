@@ -1,0 +1,17 @@
+.slide-text {
+  height: 250px;
+}
+.slide-text p {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: rgba(255, 255, 255, 0.8);
+}
+.slide-text img {
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+.bxslider li {
+  margin-top: -25px;
+}

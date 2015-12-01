@@ -1,0 +1,229 @@
+﻿<!doctype html>
+<!--[if lt IE 7]>
+<html class="no-js ie6 lt-ie10 lt-ie9 lt-ie8 lt-ie7 oldie" lang="cs"><![endif]-->
+<!--[if IE 7]>
+<html class="no-js ie7 lt-ie10 lt-ie9 lt-ie8 oldie" lang="cs"><![endif]-->
+<!--[if IE 8]>
+<html class="no-js ie8 lt-ie10 lt-ie9 oldie" lang="cs"><![endif]-->
+<!--[if IE 9]>
+<html class="no-js ie9 lt-ie10" lang="cs"> <![endif]-->
+<!--[if gt IE 9]><!-->
+<html class="no-js" lang="cs">
+<!--<![endif]-->
+<head>
+    <meta charset="utf-8"/>
+    <title>My product website</title>
+
+    <meta name="description" content=""/>
+    <meta name="keywords" content=""/>
+
+    <meta name="robots" content="index, follow"/>
+
+    <link rel="stylesheet" type="text/css" href="./css/jquery.bxslider.css"/>
+
+    <link rel="stylesheet" type="text/css" href="./css/style.css"/>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" type="text/css"
+          href="http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,600,300,700&subset=latin-ext,latin"/>
+
+</head>
+<body>
+
+
+<header>
+
+    <!-- BEGIN: WEBSITE LANGUAGES -->
+
+    <div id="language-switch">
+        <a href="" class="lang-cs current">CS</a> | <a href="" class="lang-en">EN</a>
+    </div>
+
+    <!-- END: WEBSITE LANGUAGES -->
+
+
+    <!-- PAGE HEADER -->
+
+    <div id="main-menu">
+        <div class="menu">
+            <div role="navigation" class="navigation">
+                <label for="toggle-mobile-menu">&#9776; Menu</label>
+                <input id="toggle-mobile-menu" type="checkbox"/>
+                <ul role="menubar">
+                    <li role="menuitem" tabindex="-1" class="depth-0">
+                        <a href="index-main.html">Home</a>
+                    </li>
+                    <li role="menuitem" tabindex="-1" class="parent depth-0" aria-haspopup="true">
+                        <a href="">About</a>
+                        <ul role="menu">
+                            <li role="menuitem" tabindex="-1" class="depth-1">
+                                <a href="index-content.html">Blog</a>
+                            </li>
+                            <li role="menuitem" tabindex="-1" class="depth-1">
+                                <a href="index-contact.html">Contact us</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li role="menuitem" tabindex="-1" class="depth-0">
+                        <a href="">Products</a>
+                    </li>
+                    <li role="menuitem" tabindex="-1" class="parent depth-0" aria-haspopup="true">
+                        <a href="">Services</a>
+                        <ul role="menu">
+                            <li role="menuitem" tabindex="-1" class=" depth-1">
+                                <a href="">Corporate governance</a>
+                            </li>
+                            <li role="menuitem" tabindex="-1" class="depth-1">
+                                <a href="">Visual thinking</a>
+                            </li>
+                            <li role="menuitem" tabindex="-1" class=" depth-1">
+                                <a href="">Long-term value</a>
+                            </li>
+                            <li role="menuitem" tabindex="-1" class="depth-1">
+                                <a href="">For stakeholders</a>
+                            </li>
+                            <li role="menuitem" tabindex="-1" class="depth-1">
+                                <a href="">Strategic Management Systems</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+</header>
+
+
+<div class="main" role="main">
+
+    <div class="form-wrapper">
+
+        <h4>Contact form</h4>
+
+        <div class="form">
+            <form id="contact-form" action="" enctype="multipart/form-data" method="post" novalidate="novalidate">
+                <table>
+                    <tbody>
+
+                    <tr class="form-text-input-tr">
+                        <td class="label-td">
+                            <label class="label-required" for="form-field-name">Your name</label>
+                        </td>
+                        <td>
+                            <input type="text" name="name" id="form-field-name" value="" required="required"
+                                   aria-required="true">
+                        </td>
+                        <td>
+                            <!-- THIS SECTION IS RESULT OF FORM VALIDATION: valid -->
+                            <span class="validation-name field-validation-error"><span>This value is invalid</span></span>
+                            <span class="validation-name field-validation-valid">ok</span>
+                        </td>
+                    </tr>
+
+                    <tr class="form-email-input-tr">
+                        <td class="label-td">
+                            <label class="label-required" for="form-field-email">Email</label>
+                        </td>
+                        <td>
+                            <input type="email" name="email" id="form-field-email" value="" required="required"
+                                   aria-required="true">
+                        </td>
+                        <td>
+                            <!-- THIS SECTION IS RESULT OF FORM VALIDATION: invalid -->
+                            <span class="validation-email field-validation-error"><span>This value is invalid</span></span>
+                            <span class="validation-email field-validation-valid">ok</span>
+
+                        </td>
+                    </tr>
+
+                    <tr class="form-text-input-tr">
+                        <td class="label-td">
+                            <label for="form-field-phone-number">Phone number</label>
+                        </td>
+                        <td>
+                            <input type="text" name="phone-number" id="form-field-phone-number" value="">
+                        </td>
+                        <td>
+                            <span class="validation-phone field-validation-error"><span>This value is invalid</span></span>
+                            <span class="validation-phone field-validation-valid">ok</span>
+                        </td>
+                    </tr>
+
+                    <tr class="form-text-input-tr">
+                        <td class="label-td">
+                            <label for="form-field-company">Company</label>
+                        </td>
+                        <td>
+                            <input type="text" name="company" id="form-field-company" value="">
+                        </td>
+                        <td>
+                            <span class="validation-company field-validation-error"><span>This value is invalid</span></span>
+                            <span class="validation-company field-validation-valid">ok</span>
+                        </td>
+                    </tr>
+
+                    <tr class="form-text-input-tr">
+                        <td class="label-td">
+                            <label for="form-field-web">Web</label>
+                        </td>
+                        <td>
+                            <input type="text" name="web" id="form-field-web" value="">
+                        </td>
+                        <td>
+                            <span class="field-validation-valid"></span>
+                        </td>
+                    </tr>
+
+                    <tr class="form-text-area-tr">
+                        <td class="label-td">
+                            <label for="form-field-note">Note</label>
+                        </td>
+                        <td>
+                            <textarea name="note" id="form-field-note"></textarea>
+                        </td>
+                        <td>
+                            <span class="field-validation-valid"></span>
+                        </td>
+                    </tr>
+
+                    <tr class="form-submit-tr">
+                        <td>&nbsp;</td>
+                        <td>
+                            <input class="form-submit" type="submit" value="Submit">
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </form>
+        </div>
+
+    </div>
+
+</div>
+
+
+<footer>
+
+    <p>&copy; RedCore Corporation 2015</p>
+
+</footer>
+
+
+<!--[if lt IE 9]>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<![endif]-->
+<!--[if gte IE 9]><!-->
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<!--<![endif]-->
+
+
+<!-- JS for content slider -->
+<script type="text/javascript" src="js/jquery.bxslider.js"></script>
+
+<script type="text/javascript" src="js/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+<script type="text/javascript" src="js/main.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,104 @@
+@import "variables";
+
+//input {
+//  display: block;
+//  width: 100%;
+//  height: 34px;
+//  padding-left: 12px;
+//  padding-right: 12px;
+//  color: #555;
+//  background-color: #fff;
+//  background-image: none;
+//  border: 1px solid #ccc;
+//  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+//  box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+//  -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+//  -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+//  transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+//
+//  &:focus, &:active, &:hover {
+//    border-color: #000000;
+//    outline: 0;
+//    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(0, 0, 0, 1);
+//    box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(0, 0, 0, 0.6);
+//  }
+//}
+
+input, textarea {
+  padding: 5px;
+  border: none;
+  border-bottom: solid 2px darken(@color-light, 25%);
+  transition: border 0.3s;
+  outline: none;
+
+
+  &:focus, &:active, &:hover {
+    border-bottom: solid 2px @color-dark;
+  }
+}
+
+input[type=submit], button {
+  border: solid 2px darken(@color-light, 25%);
+  background-color: @color-light;
+  color: @color-dark;
+  transition: color 0.3s, border 0.3s;
+  padding-right: 10px;
+  padding-left: 10px;
+
+  &:hover {
+    border: solid 2px @color-dark;
+  }
+
+  &:focus, &:active  {
+    background-color: @color-dark;
+    color: @color-light;
+  }
+}
+
+a {
+  color: #41b7d8;
+  text-decoration: underline;
+}
+
+.form-text-input-tr {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+
+// FORM
+.form-wrapper {
+  margin: 25px;
+
+  h4 {
+    border-bottom: 2px solid @color-dark;
+  }
+
+  tr {
+    display: block;
+  }
+
+  td {
+    display: inline-block;
+    margin-right: 10px;
+  }
+
+  td.label-td {
+    width: 150px;
+    //float: right;
+  }
+
+  tr.form-submit-tr {
+    margin-top: 15px;
+  }
+
+  .field-validation-error {
+    font-size: 0.7em;
+    color: darkred;
+  }
+
+  .field-validation-valid {
+    font-size: 0.7em;
+    color: #6ba75c;
+  }
+}

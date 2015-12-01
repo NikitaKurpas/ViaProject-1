@@ -1,0 +1,38 @@
+@import "variables";
+
+.photo-gallery {
+
+  float: right;
+
+  @media (max-width: @screen-desktop) {
+    text-align: center;
+    float: none;
+  }
+  
+  figure {
+    border: 1px solid @color-light;
+    padding: 5px;
+
+    @media (max-width: @screen-tablet) {
+      width: 100%;
+      text-align: center;
+      display: inline-block;
+      margin-left: 10px;
+    }
+
+    img {
+      width: 350px;
+      height: 150px;
+    }
+    
+    @media (min-width: @screen-tablet) and (max-width: @screen-desktop) {
+      img {
+        width: 100%;
+      }
+    }
+  }
+
+  h4 {
+    margin-left: 15px;
+  }
+}

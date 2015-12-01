@@ -1,0 +1,181 @@
+@import "variables";
+
+//#main-menu {
+//  width: 100%;
+//  height: @main-menu-height;
+//  border-top: 1px solid @color-dark;
+//  border-bottom: 1px solid @color-dark;
+//  color: @color-light;
+//  position: relative;
+//}
+
+// root of navigation
+.menu {
+  background: @color-dark;
+}
+
+.navigation {
+  display: block;
+  position: relative;
+  height: @main-menu-height;
+  margin: 0 auto;
+  border-bottom: 1px solid white;
+
+  @media (min-width: @screen-tablet) and (max-width: @screen-desktop) {
+    width: @screen-tablet;
+  }
+
+  @media (min-width: @screen-desktop) and (max-width: @screen-lg-desktop) {
+    width: @screen-desktop;
+  }
+
+  @media (min-width: @screen-lg-desktop) {
+    width: @screen-lg-desktop;
+  }
+
+  a {
+    color: @menu-color-active;
+    text-decoration: none;
+    display: block;
+    padding: 10px 25px;
+    background: @menu-color-inactive;
+    transition: color 0.3s, background-color 0.3s;
+
+    &:hover {
+      color: @menu-color-inactive;
+      background: @menu-color-active;
+    }
+  }
+
+  // 1st level list
+  ul {
+    padding: 0;
+    margin: 0;
+
+    // 1st level list item
+    li {
+      float: left;
+      display: inline;
+      position: relative;
+      border-right: 1px solid @menu-color-active;
+
+      // 2nd level list
+      ul {
+        left: 0;
+        top: 100%;
+
+        li {
+          border-right: none;
+        }
+      }
+    }
+
+    li:last-child {
+      border-right: none;
+    }
+
+    // 2nd level list
+    ul {
+      display: none;
+    }
+  }
+
+  // 1st level list item > 2nd level list
+  li:hover > ul {
+    display: block;
+    position: absolute;
+    z-index: 1000;
+    width: 150px;
+
+    li {
+      width: 100%;
+    }
+  }
+
+  // Mobile menu open/closed switch
+  & > input, & > label {
+    display: none;
+  }
+
+  & > label {
+    width: 100%;
+    float: left;
+    padding: 10px 0 10px 10px;
+    cursor: pointer;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    color: @color-light;
+  }
+  
+  @media (max-width: @screen-tablet) {
+    & {
+      z-index: 1000;
+    }
+
+    & > label, ul li ul {
+      display: block;
+    }
+
+    & > ul {
+      display: none;
+      clear: both;
+    }
+
+    & > input:checked + ul {
+      display: block;
+    }
+
+    ul {
+      ul {
+        li a:before {
+          content:'> ';
+          display: inline;
+        }
+
+        li:hover > ul {
+          right:auto;
+          top: auto;
+          left: auto;
+        }
+      }
+
+      li {
+        float: none;
+        display: block;
+        border-right: none;
+        padding-left: 10px;
+      }
+    }
+
+    li:hover ul {
+      position: relative;
+      width: auto;
+    }
+
+
+  }
+}
+
+ul.menu {
+
+}
+
+.navigation {
+
+}
+
+.depth-0 {
+
+}
+
+.depth-1 {
+
+}
+
+.parent {
+
+}
